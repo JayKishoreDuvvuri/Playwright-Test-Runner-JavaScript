@@ -1,0 +1,111 @@
+{
+  "files": [
+    {
+      "fileId": "9985a4b58a9fd32f8ef09dc62361ac297f083d9f",
+      "fileName": "addToCart.test.js",
+      "tests": [
+        {
+          "testId": "9985a4b58a9fd32f8ef09dc62361ac297f083d9f-75b9ba6b2601fa42a1890610976d7691fe1e7576",
+          "title": "Add to Cart",
+          "projectName": "Chrome",
+          "location": {
+            "file": "addToCart.test.js",
+            "line": 11,
+            "column": 1
+          },
+          "duration": 16010,
+          "outcome": "unexpected",
+          "path": [
+            "addToCart.test.js:11"
+          ],
+          "ok": false
+        }
+      ],
+      "stats": {
+        "total": 1,
+        "expected": 0,
+        "unexpected": 1,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": false,
+        "duration": 16010
+      }
+    },
+    {
+      "fileId": "7c3a723d0fa3870494e6ca43bdbcf1dd1b1d7e6c",
+      "fileName": "productNames.test.js",
+      "tests": [
+        {
+          "testId": "7c3a723d0fa3870494e6ca43bdbcf1dd1b1d7e6c-14e3a5a641aa36fabd6fc1f3dadb5e8264255702",
+          "title": "Check Product Names Visible and Print it to Test Report",
+          "projectName": "Chrome",
+          "location": {
+            "file": "productNames.test.js",
+            "line": 9,
+            "column": 2
+          },
+          "duration": 6232,
+          "outcome": "expected",
+          "path": [
+            "productNames.test.js:9",
+            "Validate Product Names"
+          ],
+          "ok": true
+        }
+      ],
+      "stats": {
+        "total": 1,
+        "expected": 1,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": true,
+        "duration": 6232
+      }
+    },
+    {
+      "fileId": "ee4f6e5d7dfbe2654038f0e77da21b4cb3f9fdd7",
+      "fileName": "toggleProductColour.test.js",
+      "tests": [
+        {
+          "testId": "ee4f6e5d7dfbe2654038f0e77da21b4cb3f9fdd7-9c7030f34f3dc2270cb47da2f5f97834c12ab2c4",
+          "title": "Toggle Workflow Test",
+          "projectName": "Chrome",
+          "location": {
+            "file": "toggleProductColour.test.js",
+            "line": 20,
+            "column": 2
+          },
+          "duration": 11976,
+          "outcome": "expected",
+          "path": [
+            "toggleProductColour.test.js:20",
+            "Toggle between the colours of the Product"
+          ],
+          "ok": true
+        }
+      ],
+      "stats": {
+        "total": 1,
+        "expected": 1,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": true,
+        "duration": 11976
+      }
+    }
+  ],
+  "projectNames": [
+    "Chrome"
+  ],
+  "stats": {
+    "total": 3,
+    "expected": 2,
+    "unexpected": 1,
+    "flaky": 0,
+    "skipped": 0,
+    "ok": false,
+    "duration": 34218
+  }
+}

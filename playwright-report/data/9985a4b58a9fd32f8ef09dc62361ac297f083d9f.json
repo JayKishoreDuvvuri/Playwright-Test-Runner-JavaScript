@@ -1,0 +1,644 @@
+{
+  "fileId": "9985a4b58a9fd32f8ef09dc62361ac297f083d9f",
+  "fileName": "addToCart.test.js",
+  "tests": [
+    {
+      "testId": "9985a4b58a9fd32f8ef09dc62361ac297f083d9f-75b9ba6b2601fa42a1890610976d7691fe1e7576",
+      "title": "Add to Cart",
+      "projectName": "Chrome",
+      "location": {
+        "file": "addToCart.test.js",
+        "line": 11,
+        "column": 1
+      },
+      "duration": 16010,
+      "outcome": "unexpected",
+      "path": [
+        "addToCart.test.js:11"
+      ],
+      "results": [
+        {
+          "duration": 8999,
+          "startTime": "2021-11-04T16:11:08.613Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-11-04T16:11:08.613Z",
+              "duration": 1517,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-11-04T16:11:09.206Z",
+                  "duration": 923,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "Check the title and url on the Landing Page",
+              "startTime": "2021-11-04T16:11:10.130Z",
+              "duration": 3367,
+              "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m test(\u001b[32m'Add to Cart'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ landingPage\u001b[33m,\u001b[39m addToCartPage }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m \t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Check the title and url on the Landing Page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m \t\t\u001b[36mawait\u001b[39m landingPage\u001b[33m.\u001b[39mopen()\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.goto(http://automationpractice.com/index.php)",
+                  "startTime": "2021-11-04T16:11:10.218Z",
+                  "duration": 3152,
+                  "snippet": "\u001b[0m \u001b[90m  12 |\u001b[39m \t\u001b[36masync\u001b[39m open(url) {\u001b[0m\n\u001b[0m \u001b[90m  13 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(url)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  14 |\u001b[39m \t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 13,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.waitForSelector(div#header_logo)",
+                  "startTime": "2021-11-04T16:11:13.371Z",
+                  "duration": 77,
+                  "snippet": "\u001b[0m \u001b[90m  21 |\u001b[39m \t\u001b[36masync\u001b[39m waitForPageLoad() {\u001b[0m\n\u001b[0m \u001b[90m  22 |\u001b[39m \t\t\u001b[36mconst\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(homePageImage\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  23 |\u001b[39m \t\t\tvisible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 22,
+                    "column": 37
+                  }
+                },
+                {
+                  "title": "page.title",
+                  "startTime": "2021-11-04T16:11:13.449Z",
+                  "duration": 3,
+                  "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m \t\u001b[36masync\u001b[39m getTitle() {\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mtitle()\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                         ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  10 |\u001b[39m \t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 9,
+                    "column": 26
+                  }
+                },
+                {
+                  "title": "page.waitForSelector(div#header_logo)",
+                  "startTime": "2021-11-04T16:11:13.452Z",
+                  "duration": 45,
+                  "snippet": "\u001b[0m \u001b[90m  21 |\u001b[39m \t\u001b[36masync\u001b[39m waitForPageLoad() {\u001b[0m\n\u001b[0m \u001b[90m  22 |\u001b[39m \t\t\u001b[36mconst\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(homePageImage\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  23 |\u001b[39m \t\t\tvisible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 22,
+                    "column": 37
+                  }
+                }
+              ],
+              "location": {
+                "file": "addToCart.test.js",
+                "line": 12,
+                "column": 13
+              }
+            },
+            {
+              "title": "click on 20% discuont listed Item",
+              "startTime": "2021-11-04T16:11:13.497Z",
+              "duration": 1287,
+              "snippet": "\u001b[0m \u001b[90m 18 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m \t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'click on 20% discuont listed Item'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m \t\t\u001b[36mawait\u001b[39m addToCartPage\u001b[33m.\u001b[39mprintedChiffonDress()\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector(#homefeatured > li.last-mobile-line > div > div.right-block > h5 > a)",
+                  "startTime": "2021-11-04T16:11:13.498Z",
+                  "duration": 28,
+                  "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 31,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.waitForSelector(#homefeatured > li.last-mobile-line > div > div.right-block > h5 > a)",
+                  "startTime": "2021-11-04T16:11:13.527Z",
+                  "duration": 15,
+                  "snippet": "\u001b[0m \u001b[90m  46 |\u001b[39m \t\u001b[36masync\u001b[39m waitAndClick(\u001b[33mSelector\u001b[39m) {\u001b[0m\n\u001b[0m \u001b[90m  47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  48 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[33mSelector\u001b[39m)\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 47,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.click(#homefeatured > li.last-mobile-line > div > div.right-block > h5 > a)",
+                  "startTime": "2021-11-04T16:11:13.543Z",
+                  "duration": 1241,
+                  "snippet": "\u001b[0m \u001b[90m  47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m  48 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                   ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  49 |\u001b[39m \t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 48,
+                    "column": 20
+                  }
+                }
+              ],
+              "location": {
+                "file": "addToCart.test.js",
+                "line": 19,
+                "column": 13
+              }
+            },
+            {
+              "title": "Check whether the Shopping Cart is enabled and click item to add to Cart",
+              "startTime": "2021-11-04T16:11:14.784Z",
+              "duration": 614,
+              "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m \t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m \t\t\u001b[32m'Check whether the Shopping Cart is enabled and click item to add to Cart'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector(#add_to_cart > button:not([disabled]))",
+                  "startTime": "2021-11-04T16:11:14.785Z",
+                  "duration": 552,
+                  "snippet": "\u001b[0m \u001b[90m  46 |\u001b[39m \t\u001b[36masync\u001b[39m waitAndClick(\u001b[33mSelector\u001b[39m) {\u001b[0m\n\u001b[0m \u001b[90m  47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  48 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[33mSelector\u001b[39m)\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 47,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.click(#add_to_cart > button:not([disabled]))",
+                  "startTime": "2021-11-04T16:11:15.337Z",
+                  "duration": 61,
+                  "snippet": "\u001b[0m \u001b[90m  47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m  48 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                   ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  49 |\u001b[39m \t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 48,
+                    "column": 20
+                  }
+                }
+              ],
+              "location": {
+                "file": "addToCart.test.js",
+                "line": 24,
+                "column": 13
+              }
+            },
+            {
+              "title": "Verify whether the product added to Cart message is displayed",
+              "startTime": "2021-11-04T16:11:15.398Z",
+              "duration": 1194,
+              "snippet": "\u001b[0m \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m \t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m \t\t\u001b[32m'Verify whether the product added to Cart message is displayed'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector(div.layer_cart_product.col-xs-12.col-md-6 > h2)",
+                  "startTime": "2021-11-04T16:11:15.399Z",
+                  "duration": 1170,
+                  "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 31,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.waitForSelector(//span[contains(text(),'There is 1 item in your cart.')])",
+                  "startTime": "2021-11-04T16:11:16.569Z",
+                  "duration": 21,
+                  "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 31,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "expect.toBeTruthy",
+                  "startTime": "2021-11-04T16:11:16.591Z",
+                  "duration": 1,
+                  "snippet": "\u001b[0m \u001b[90m 35 |\u001b[39m \t\t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m addToCartPage\u001b[33m.\u001b[39mcartAddedMessage()\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m \t\t\texpect(isVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                     ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m \t\t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "addToCart.test.js",
+                    "line": 36,
+                    "column": 22
+                  }
+                }
+              ],
+              "location": {
+                "file": "addToCart.test.js",
+                "line": 31,
+                "column": 13
+              }
+            },
+            {
+              "title": "Verify the product count from the Cart",
+              "startTime": "2021-11-04T16:11:16.592Z",
+              "duration": 103,
+              "snippet": "\u001b[0m \u001b[90m 39 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m \t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify the product count from the Cart'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m \t\t\u001b[36mlet\u001b[39m getProductCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m addToCartPage\u001b[33m.\u001b[39mcartCount()\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector(span.cross)",
+                  "startTime": "2021-11-04T16:11:16.592Z",
+                  "duration": 15,
+                  "snippet": "\u001b[0m \u001b[90m  46 |\u001b[39m \t\u001b[36masync\u001b[39m waitAndClick(\u001b[33mSelector\u001b[39m) {\u001b[0m\n\u001b[0m \u001b[90m  47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  48 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[33mSelector\u001b[39m)\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 47,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.click(span.cross)",
+                  "startTime": "2021-11-04T16:11:16.608Z",
+                  "duration": 54,
+                  "snippet": "\u001b[0m \u001b[90m  47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m  48 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                   ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  49 |\u001b[39m \t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 48,
+                    "column": 20
+                  }
+                },
+                {
+                  "title": "page.waitForSelector(div > a > span.ajax_cart_quantity.unvisible)",
+                  "startTime": "2021-11-04T16:11:16.662Z",
+                  "duration": 18,
+                  "snippet": "\u001b[0m \u001b[90m  52 |\u001b[39m \t\u001b[36masync\u001b[39m getText(\u001b[33mSelector\u001b[39m) {\u001b[0m\n\u001b[0m \u001b[90m  53 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  54 |\u001b[39m \t\t\u001b[36mconst\u001b[39m text \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39m$eval(\u001b[33mSelector\u001b[39m\u001b[33m,\u001b[39m element \u001b[33m=>\u001b[39m element\u001b[33m.\u001b[39minnerHTML)\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 53,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.$eval(div > a > span.ajax_cart_quantity.unvisible)",
+                  "startTime": "2021-11-04T16:11:16.681Z",
+                  "duration": 14,
+                  "snippet": "\u001b[0m \u001b[90m  53 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m  54 |\u001b[39m \t\t\u001b[36mconst\u001b[39m text \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39m$eval(\u001b[33mSelector\u001b[39m\u001b[33m,\u001b[39m element \u001b[33m=>\u001b[39m element\u001b[33m.\u001b[39minnerHTML)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                               ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  55 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m text\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 54,
+                    "column": 32
+                  }
+                }
+              ],
+              "location": {
+                "file": "addToCart.test.js",
+                "line": 40,
+                "column": 13
+              },
+              "error": "productCount1 is not defined"
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-11-04T16:11:16.696Z",
+              "duration": 915,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-11-04T16:11:17.368Z",
+                  "duration": 100,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "ReferenceError: productCount1 is not defined\n\n\u001b[0m \u001b[90m 40 |\u001b[39m \t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify the product count from the Cart'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m \t\t\u001b[36mlet\u001b[39m getProductCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m addToCartPage\u001b[33m.\u001b[39mcartCount()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 42 |\u001b[39m \t\texpect(getProductCount)\u001b[33m.\u001b[39mtoEqual(productCount1)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \t\t                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m \t})\u001b[0m\n\u001b[0m \u001b[90m 44 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/Jay/Desktop/Playwright-Test-Runner/tests/addToCart.test.js:42:35\u001b[22m\n\u001b[2m    at TestTypeImpl._step (/Users/Jay/Desktop/Playwright-Test-Runner/node_modules/@playwright/test/lib/testType.js:214:7)\u001b[22m\n\u001b[2m    at /Users/Jay/Desktop/Playwright-Test-Runner/tests/addToCart.test.js:40:2\u001b[22m\n\u001b[2m    at WorkerRunner._runTestWithBeforeHooks (/Users/Jay/Desktop/Playwright-Test-Runner/node_modules/@playwright/test/lib/workerRunner.js:478:7)\u001b[22m",
+          "status": "failed",
+          "attachments": [
+            {
+              "name": "video",
+              "contentType": "video/webm",
+              "path": "data/081a04ad593bc235ab89f8c48d77f983ff23ded3.webm"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/24171d0500779a6f4d7f24508364bd43a4caef2a.zip"
+            },
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "data/fe7e1c31e61cd951e79015983daad488742501d3.png"
+            }
+          ]
+        },
+        {
+          "duration": 7011,
+          "startTime": "2021-11-04T16:11:21.621Z",
+          "retry": 1,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-11-04T16:11:21.621Z",
+              "duration": 281,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-11-04T16:11:21.632Z",
+                  "duration": 270,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "Check the title and url on the Landing Page",
+              "startTime": "2021-11-04T16:11:21.903Z",
+              "duration": 3109,
+              "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m test(\u001b[32m'Add to Cart'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ landingPage\u001b[33m,\u001b[39m addToCartPage }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m \t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Check the title and url on the Landing Page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m \t\t\u001b[36mawait\u001b[39m landingPage\u001b[33m.\u001b[39mopen()\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.goto(http://automationpractice.com/index.php)",
+                  "startTime": "2021-11-04T16:11:21.904Z",
+                  "duration": 3042,
+                  "snippet": "\u001b[0m \u001b[90m  12 |\u001b[39m \t\u001b[36masync\u001b[39m open(url) {\u001b[0m\n\u001b[0m \u001b[90m  13 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(url)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  14 |\u001b[39m \t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 13,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.waitForSelector(div#header_logo)",
+                  "startTime": "2021-11-04T16:11:24.947Z",
+                  "duration": 42,
+                  "snippet": "\u001b[0m \u001b[90m  21 |\u001b[39m \t\u001b[36masync\u001b[39m waitForPageLoad() {\u001b[0m\n\u001b[0m \u001b[90m  22 |\u001b[39m \t\t\u001b[36mconst\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(homePageImage\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  23 |\u001b[39m \t\t\tvisible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 22,
+                    "column": 37
+                  }
+                },
+                {
+                  "title": "page.title",
+                  "startTime": "2021-11-04T16:11:24.990Z",
+                  "duration": 1,
+                  "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m \t\u001b[36masync\u001b[39m getTitle() {\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mtitle()\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                         ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  10 |\u001b[39m \t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 9,
+                    "column": 26
+                  }
+                },
+                {
+                  "title": "page.waitForSelector(div#header_logo)",
+                  "startTime": "2021-11-04T16:11:24.992Z",
+                  "duration": 20,
+                  "snippet": "\u001b[0m \u001b[90m  21 |\u001b[39m \t\u001b[36masync\u001b[39m waitForPageLoad() {\u001b[0m\n\u001b[0m \u001b[90m  22 |\u001b[39m \t\t\u001b[36mconst\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(homePageImage\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  23 |\u001b[39m \t\t\tvisible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 22,
+                    "column": 37
+                  }
+                }
+              ],
+              "location": {
+                "file": "addToCart.test.js",
+                "line": 12,
+                "column": 13
+              }
+            },
+            {
+              "title": "click on 20% discuont listed Item",
+              "startTime": "2021-11-04T16:11:25.012Z",
+              "duration": 1166,
+              "snippet": "\u001b[0m \u001b[90m 18 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m \t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'click on 20% discuont listed Item'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m \t\t\u001b[36mawait\u001b[39m addToCartPage\u001b[33m.\u001b[39mprintedChiffonDress()\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector(#homefeatured > li.last-mobile-line > div > div.right-block > h5 > a)",
+                  "startTime": "2021-11-04T16:11:25.013Z",
+                  "duration": 19,
+                  "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 31,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.waitForSelector(#homefeatured > li.last-mobile-line > div > div.right-block > h5 > a)",
+                  "startTime": "2021-11-04T16:11:25.032Z",
+                  "duration": 17,
+                  "snippet": "\u001b[0m \u001b[90m  46 |\u001b[39m \t\u001b[36masync\u001b[39m waitAndClick(\u001b[33mSelector\u001b[39m) {\u001b[0m\n\u001b[0m \u001b[90m  47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  48 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[33mSelector\u001b[39m)\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 47,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.click(#homefeatured > li.last-mobile-line > div > div.right-block > h5 > a)",
+                  "startTime": "2021-11-04T16:11:25.050Z",
+                  "duration": 1128,
+                  "snippet": "\u001b[0m \u001b[90m  47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m  48 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                   ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  49 |\u001b[39m \t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 48,
+                    "column": 20
+                  }
+                }
+              ],
+              "location": {
+                "file": "addToCart.test.js",
+                "line": 19,
+                "column": 13
+              }
+            },
+            {
+              "title": "Check whether the Shopping Cart is enabled and click item to add to Cart",
+              "startTime": "2021-11-04T16:11:26.178Z",
+              "duration": 618,
+              "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 |\u001b[39m \t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 25 |\u001b[39m \t\t\u001b[32m'Check whether the Shopping Cart is enabled and click item to add to Cart'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector(#add_to_cart > button:not([disabled]))",
+                  "startTime": "2021-11-04T16:11:26.178Z",
+                  "duration": 551,
+                  "snippet": "\u001b[0m \u001b[90m  46 |\u001b[39m \t\u001b[36masync\u001b[39m waitAndClick(\u001b[33mSelector\u001b[39m) {\u001b[0m\n\u001b[0m \u001b[90m  47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  48 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[33mSelector\u001b[39m)\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 47,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.click(#add_to_cart > button:not([disabled]))",
+                  "startTime": "2021-11-04T16:11:26.729Z",
+                  "duration": 67,
+                  "snippet": "\u001b[0m \u001b[90m  47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m  48 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                   ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  49 |\u001b[39m \t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 48,
+                    "column": 20
+                  }
+                }
+              ],
+              "location": {
+                "file": "addToCart.test.js",
+                "line": 24,
+                "column": 13
+              }
+            },
+            {
+              "title": "Verify whether the product added to Cart message is displayed",
+              "startTime": "2021-11-04T16:11:26.796Z",
+              "duration": 1231,
+              "snippet": "\u001b[0m \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m \t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m \t\t\u001b[32m'Verify whether the product added to Cart message is displayed'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector(div.layer_cart_product.col-xs-12.col-md-6 > h2)",
+                  "startTime": "2021-11-04T16:11:26.797Z",
+                  "duration": 1205,
+                  "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 31,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.waitForSelector(//span[contains(text(),'There is 1 item in your cart.')])",
+                  "startTime": "2021-11-04T16:11:28.002Z",
+                  "duration": 23,
+                  "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 31,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "expect.toBeTruthy",
+                  "startTime": "2021-11-04T16:11:28.026Z",
+                  "duration": 1,
+                  "snippet": "\u001b[0m \u001b[90m 35 |\u001b[39m \t\t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m addToCartPage\u001b[33m.\u001b[39mcartAddedMessage()\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m \t\t\texpect(isVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m                     ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 37 |\u001b[39m \t\t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "addToCart.test.js",
+                    "line": 36,
+                    "column": 22
+                  }
+                }
+              ],
+              "location": {
+                "file": "addToCart.test.js",
+                "line": 31,
+                "column": 13
+              }
+            },
+            {
+              "title": "Verify the product count from the Cart",
+              "startTime": "2021-11-04T16:11:28.027Z",
+              "duration": 92,
+              "snippet": "\u001b[0m \u001b[90m 39 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m \t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify the product count from the Cart'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m            ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m \t\t\u001b[36mlet\u001b[39m getProductCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m addToCartPage\u001b[33m.\u001b[39mcartCount()\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector(span.cross)",
+                  "startTime": "2021-11-04T16:11:28.027Z",
+                  "duration": 12,
+                  "snippet": "\u001b[0m \u001b[90m  46 |\u001b[39m \t\u001b[36masync\u001b[39m waitAndClick(\u001b[33mSelector\u001b[39m) {\u001b[0m\n\u001b[0m \u001b[90m  47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  48 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[33mSelector\u001b[39m)\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 47,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.click(span.cross)",
+                  "startTime": "2021-11-04T16:11:28.040Z",
+                  "duration": 52,
+                  "snippet": "\u001b[0m \u001b[90m  47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m  48 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                   ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  49 |\u001b[39m \t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 48,
+                    "column": 20
+                  }
+                },
+                {
+                  "title": "page.waitForSelector(div > a > span.ajax_cart_quantity.unvisible)",
+                  "startTime": "2021-11-04T16:11:28.093Z",
+                  "duration": 13,
+                  "snippet": "\u001b[0m \u001b[90m  52 |\u001b[39m \t\u001b[36masync\u001b[39m getText(\u001b[33mSelector\u001b[39m) {\u001b[0m\n\u001b[0m \u001b[90m  53 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  54 |\u001b[39m \t\t\u001b[36mconst\u001b[39m text \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39m$eval(\u001b[33mSelector\u001b[39m\u001b[33m,\u001b[39m element \u001b[33m=>\u001b[39m element\u001b[33m.\u001b[39minnerHTML)\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 53,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.$eval(div > a > span.ajax_cart_quantity.unvisible)",
+                  "startTime": "2021-11-04T16:11:28.107Z",
+                  "duration": 12,
+                  "snippet": "\u001b[0m \u001b[90m  53 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(\u001b[33mSelector\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m  54 |\u001b[39m \t\t\u001b[36mconst\u001b[39m text \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39m$eval(\u001b[33mSelector\u001b[39m\u001b[33m,\u001b[39m element \u001b[33m=>\u001b[39m element\u001b[33m.\u001b[39minnerHTML)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                               ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  55 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m text\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 54,
+                    "column": 32
+                  }
+                }
+              ],
+              "location": {
+                "file": "addToCart.test.js",
+                "line": 40,
+                "column": 13
+              },
+              "error": "productCount1 is not defined"
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-11-04T16:11:28.119Z",
+              "duration": 513,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-11-04T16:11:28.507Z",
+                  "duration": 84,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "ReferenceError: productCount1 is not defined\n\n\u001b[0m \u001b[90m 40 |\u001b[39m \t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify the product count from the Cart'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m \t\t\u001b[36mlet\u001b[39m getProductCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m addToCartPage\u001b[33m.\u001b[39mcartCount()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 42 |\u001b[39m \t\texpect(getProductCount)\u001b[33m.\u001b[39mtoEqual(productCount1)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \t\t                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 43 |\u001b[39m \t})\u001b[0m\n\u001b[0m \u001b[90m 44 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/Jay/Desktop/Playwright-Test-Runner/tests/addToCart.test.js:42:35\u001b[22m\n\u001b[2m    at TestTypeImpl._step (/Users/Jay/Desktop/Playwright-Test-Runner/node_modules/@playwright/test/lib/testType.js:214:7)\u001b[22m\n\u001b[2m    at /Users/Jay/Desktop/Playwright-Test-Runner/tests/addToCart.test.js:40:2\u001b[22m\n\u001b[2m    at WorkerRunner._runTestWithBeforeHooks (/Users/Jay/Desktop/Playwright-Test-Runner/node_modules/@playwright/test/lib/workerRunner.js:478:7)\u001b[22m",
+          "status": "failed",
+          "attachments": [
+            {
+              "name": "video",
+              "contentType": "video/webm",
+              "path": "data/0931de2efb6bc6ae66826e9420558f0bdc2f58ab.webm"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/6244fd5736cb6c9eea27c7cd0b8143facdb72794.zip"
+            },
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "data/69325b21c4ade59e0a75c8b52a8f8893134f1023.png"
+            }
+          ]
+        }
+      ],
+      "ok": false
+    }
+  ]
+}

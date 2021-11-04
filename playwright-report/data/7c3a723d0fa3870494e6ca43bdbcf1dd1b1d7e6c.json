@@ -1,0 +1,297 @@
+{
+  "fileId": "7c3a723d0fa3870494e6ca43bdbcf1dd1b1d7e6c",
+  "fileName": "productNames.test.js",
+  "tests": [
+    {
+      "testId": "7c3a723d0fa3870494e6ca43bdbcf1dd1b1d7e6c-14e3a5a641aa36fabd6fc1f3dadb5e8264255702",
+      "title": "Check Product Names Visible and Print it to Test Report",
+      "projectName": "Chrome",
+      "location": {
+        "file": "productNames.test.js",
+        "line": 9,
+        "column": 2
+      },
+      "duration": 6232,
+      "outcome": "expected",
+      "path": [
+        "productNames.test.js:9",
+        "Validate Product Names"
+      ],
+      "results": [
+        {
+          "duration": 6232,
+          "startTime": "2021-11-04T16:11:08.818Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-11-04T16:11:08.819Z",
+              "duration": 1875,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-11-04T16:11:09.729Z",
+                  "duration": 964,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "Open the App to check the title and url on the Landing Page",
+              "startTime": "2021-11-04T16:11:10.694Z",
+              "duration": 3277,
+              "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m \t}) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m \t\t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m \t\t\t\u001b[32m'Open the App to check the title and url on the Landing Page'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.goto(http://automationpractice.com/index.php)",
+                  "startTime": "2021-11-04T16:11:10.696Z",
+                  "duration": 3188,
+                  "snippet": "\u001b[0m \u001b[90m  12 |\u001b[39m \t\u001b[36masync\u001b[39m open(url) {\u001b[0m\n\u001b[0m \u001b[90m  13 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(url)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  14 |\u001b[39m \t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 13,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "page.waitForSelector(div#header_logo)",
+                  "startTime": "2021-11-04T16:11:13.885Z",
+                  "duration": 56,
+                  "snippet": "\u001b[0m \u001b[90m  21 |\u001b[39m \t\u001b[36masync\u001b[39m waitForPageLoad() {\u001b[0m\n\u001b[0m \u001b[90m  22 |\u001b[39m \t\t\u001b[36mconst\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(homePageImage\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  23 |\u001b[39m \t\t\tvisible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 22,
+                    "column": 37
+                  }
+                },
+                {
+                  "title": "page.title",
+                  "startTime": "2021-11-04T16:11:13.941Z",
+                  "duration": 5,
+                  "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m \t\u001b[36masync\u001b[39m getTitle() {\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m \t\t\u001b[36mreturn\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mtitle()\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                         ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  10 |\u001b[39m \t}\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 9,
+                    "column": 26
+                  }
+                },
+                {
+                  "title": "page.waitForSelector(div#header_logo)",
+                  "startTime": "2021-11-04T16:11:13.947Z",
+                  "duration": 24,
+                  "snippet": "\u001b[0m \u001b[90m  21 |\u001b[39m \t\u001b[36masync\u001b[39m waitForPageLoad() {\u001b[0m\n\u001b[0m \u001b[90m  22 |\u001b[39m \t\t\u001b[36mconst\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(homePageImage\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                                    ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  23 |\u001b[39m \t\t\tvisible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 22,
+                    "column": 37
+                  }
+                }
+              ],
+              "location": {
+                "file": "productNames.test.js",
+                "line": 12,
+                "column": 14
+              }
+            },
+            {
+              "title": "Check the product name: Faded Short Sleeve T-shirts is visible",
+              "startTime": "2021-11-04T16:11:13.972Z",
+              "duration": 19,
+              "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 |\u001b[39m \t\t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 |\u001b[39m \t\t\t\u001b[32m'Check the product name: Faded Short Sleeve T-shirts is visible'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector((//a[contains(text(),'Faded Short Sleeve T-shirts')])[1])",
+                  "startTime": "2021-11-04T16:11:13.972Z",
+                  "duration": 19,
+                  "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 31,
+                    "column": 19
+                  }
+                }
+              ],
+              "location": {
+                "file": "productNames.test.js",
+                "line": 22,
+                "column": 14
+              }
+            },
+            {
+              "title": "Check the product name: Blouse is visible",
+              "startTime": "2021-11-04T16:11:13.991Z",
+              "duration": 17,
+              "snippet": "\u001b[0m \u001b[90m 28 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 29 |\u001b[39m \t\t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Check the product name: Blouse is visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m \t\t\t\u001b[36mawait\u001b[39m landingPage\u001b[33m.\u001b[39mblouse()\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector((//a[contains(text(),'Blouse')])[2])",
+                  "startTime": "2021-11-04T16:11:13.992Z",
+                  "duration": 16,
+                  "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 31,
+                    "column": 19
+                  }
+                }
+              ],
+              "location": {
+                "file": "productNames.test.js",
+                "line": 29,
+                "column": 14
+              }
+            },
+            {
+              "title": "Check the product name: Printed Dress is visible",
+              "startTime": "2021-11-04T16:11:14.008Z",
+              "duration": 29,
+              "snippet": "\u001b[0m \u001b[90m 32 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 33 |\u001b[39m \t\t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m \t\t\t\u001b[32m'Check the product name: Printed Dress is visible'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector((//a[contains(text(),'Printed Dress')])[1])",
+                  "startTime": "2021-11-04T16:11:14.008Z",
+                  "duration": 29,
+                  "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 31,
+                    "column": 19
+                  }
+                }
+              ],
+              "location": {
+                "file": "productNames.test.js",
+                "line": 33,
+                "column": 14
+              }
+            },
+            {
+              "title": "Check the product name: Printed Dress Two is visible",
+              "startTime": "2021-11-04T16:11:14.037Z",
+              "duration": 19,
+              "snippet": "\u001b[0m \u001b[90m 39 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m \t\t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m \t\t\t\u001b[32m'Check the product name: Printed Dress Two is visible'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector((//a[contains(text(),'Printed Dress')])[2])",
+                  "startTime": "2021-11-04T16:11:14.038Z",
+                  "duration": 18,
+                  "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 31,
+                    "column": 19
+                  }
+                }
+              ],
+              "location": {
+                "file": "productNames.test.js",
+                "line": 40,
+                "column": 14
+              }
+            },
+            {
+              "title": "Check the product name: Printed Summer Dress is visible",
+              "startTime": "2021-11-04T16:11:14.056Z",
+              "duration": 33,
+              "snippet": "\u001b[0m \u001b[90m 46 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m \t\t\u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m             ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m \t\t\t\u001b[32m'Check the product name: Printed Summer Dress is visible'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector(#homefeatured > .first-in-line.last-line > div > div.right-block > h5 > a)",
+                  "startTime": "2021-11-04T16:11:14.058Z",
+                  "duration": 31,
+                  "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 31,
+                    "column": 19
+                  }
+                }
+              ],
+              "location": {
+                "file": "productNames.test.js",
+                "line": 47,
+                "column": 14
+              }
+            },
+            {
+              "title": "Check the product name: Printed Summer Dress Two is visible",
+              "startTime": "2021-11-04T16:11:14.089Z",
+              "duration": 42,
+              "snippet": "\u001b[0m \u001b[90m 53 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 54 |\u001b[39m \t\ttest\u001b[33m.\u001b[39mstep(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m       ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 55 |\u001b[39m \t\t\t\u001b[32m'Check the product name: Printed Summer Dress Two is visible'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m",
+              "steps": [
+                {
+                  "title": "page.waitForSelector((//a[contains(text(),'Printed Summer Dress')])[2])",
+                  "startTime": "2021-11-04T16:11:14.089Z",
+                  "duration": 42,
+                  "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                  "steps": [],
+                  "location": {
+                    "file": "../pages/basePage.js",
+                    "line": 31,
+                    "column": 19
+                  }
+                },
+                {
+                  "title": "Check the product name: Printed Chiffon Dress is visible",
+                  "startTime": "2021-11-04T16:11:14.089Z",
+                  "duration": 43,
+                  "snippet": "\u001b[0m \u001b[90m 60 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m \t\ttest\u001b[33m.\u001b[39mstep(\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \u001b[31m\u001b[1m       ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 62 |\u001b[39m \t\t\t\u001b[32m'Check the product name: Printed Chiffon Dress is visible'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m",
+                  "steps": [
+                    {
+                      "title": "page.waitForSelector(#homefeatured > li.last-mobile-line > div > div.right-block > h5 > a)",
+                      "startTime": "2021-11-04T16:11:14.090Z",
+                      "duration": 42,
+                      "snippet": "\u001b[0m \u001b[90m  30 |\u001b[39m \t\t\u001b[36mlet\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  31 |\u001b[39m \t\t\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m { visible\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m \u001b[31m\u001b[1m                  ^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  32 |\u001b[39m \t\t\tisVisible \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[0m",
+                      "steps": [],
+                      "location": {
+                        "file": "../pages/basePage.js",
+                        "line": 31,
+                        "column": 19
+                      }
+                    }
+                  ],
+                  "location": {
+                    "file": "productNames.test.js",
+                    "line": 61,
+                    "column": 8
+                  }
+                }
+              ],
+              "location": {
+                "file": "productNames.test.js",
+                "line": 54,
+                "column": 8
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-11-04T16:11:14.090Z",
+              "duration": 960,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-11-04T16:11:14.582Z",
+                  "duration": 468,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    }
+  ]
+}

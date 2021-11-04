@@ -1,0 +1,35 @@
+{
+	"name": "playwright-test-automation",
+	"version": "1.0.0",
+	"description": "Playwright Test runner with JavaScript",
+	"main": "index.js",
+	"scripts": {
+		"test": "npx playwright test",
+		"test:chrome": "npx playwright test --project=Chrome",
+		"test:safari": "npx playwright test --project=Webkit",
+		"test:firefox": "npx playwright test --project=Firefox",
+		"test:edge": "npx playwright test --project=Edge",
+		"product-names-test": "npx playwright test tests/productNames.test.js --project=Chrome",
+		"add-to-cart-test": "npx playwright test tests/addToCart.test.js --project=Chrome",
+		"toggle-product-colour-test": "npx playwright test tests/toggleProductColour.test.js --project=Chrome",
+		"test:android:mobile": "npx playwright test --project=Android",
+		"test:iPhone:mobile": "npx playwright test --project=iOS",
+		"test:mobile": "npm run test:iPhone:mobile && npm run test:android:mobile",
+		"test:record": "npx playwright codegen",
+		"html-report": "npx playwright test --project=Chrome --reporter=html && npx playwright show-report",
+		"show-trace": "npx playwright show-trace"
+	},
+	"keywords": [
+		"Plawright",
+		"Test Runner",
+		"Test Automation"
+	],
+	"author": "Jay Kishore Duvvuri",
+	"license": "ISC",
+	"dependencies": {
+		"@playwright/test": "^1.16.3",
+		"fs": "^0.0.1-security",
+		"playwright": "^1.16.3",
+		"prettier": "^2.2.1"
+	}
+}

@@ -1,0 +1,6 @@
+/node_modules
+/.DS_Store
+/allure-results
+/allure-report
+/html-report
+/test-results

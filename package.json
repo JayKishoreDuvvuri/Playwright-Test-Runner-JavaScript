@@ -1,7 +1,7 @@
 {
 	"name": "playwright-test-automation",
 	"version": "1.0.0",
-	"description": "Playwright Test runner with JavaScript",
+	"description": "Playwright Test Runner with JavaScript",
 	"main": "index.js",
 	"scripts": {
 		"test": "npx playwright test",

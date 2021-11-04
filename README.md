@@ -42,7 +42,7 @@ Folder Structure
     │    ├──selectors.js                    # HTML and CSS identifier for elements to test
     │               
     │
-    └─── html-test-report                 # Playwright html Test report for the tests executed
+    └─── html-test-report                   # Playwright html Test report for the tests executed
                     
 
 

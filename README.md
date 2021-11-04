@@ -16,9 +16,9 @@ Install Node modules: npm install
 
 Run test
 ```bash
-npm run test - For all browsers including Android and IOS tests
+npm run test - For all browsers including Android and iOS tests
 npm run test:chrome - For tests only on chrome browser
-npm run test:mobile - For running emulation tests on android and iOS
+npm run test:mobile - For running mobile emulation tests on android and iOS
 ```
 
 Folder Structure
@@ -42,7 +42,7 @@ Folder Structure
     │    ├──selectors.js                    # HTML and CSS identifier for elements to test
     │               
     │
-    └─── html-test-report                   # Playwright html Test report for the tests executed
+    └─── html-test-report                   # Playwright html test report for the tests executed
                     
 
 

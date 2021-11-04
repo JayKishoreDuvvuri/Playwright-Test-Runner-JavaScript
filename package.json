@@ -28,7 +28,6 @@
 	"license": "ISC",
 	"dependencies": {
 		"@playwright/test": "^1.16.3",
-		"fs": "^0.0.1-security",
 		"playwright": "^1.16.3",
 		"prettier": "^2.2.1"
 	}

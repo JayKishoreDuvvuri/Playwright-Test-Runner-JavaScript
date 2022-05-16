@@ -8,7 +8,7 @@ Clone the repository
 ```bash
 git clone https://github.com/JayKishoreDuvvuri/Playwright-Test-Runner-JavaScript.git 
 ```
-
+ 
 Install dependencies
 ```bash   
 npx playwright install

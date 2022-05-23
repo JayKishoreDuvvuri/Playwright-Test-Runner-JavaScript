@@ -11,8 +11,9 @@ git clone https://github.com/JayKishoreDuvvuri/Playwright-Test-Runner-JavaScript
   
 Install dependencies
 ```bash   
-npx playwright install
+
 npm install
+npx playwright install
 ```
 
 Run test

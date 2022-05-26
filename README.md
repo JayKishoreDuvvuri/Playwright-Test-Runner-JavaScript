@@ -53,3 +53,8 @@ Folder Structure
 Html-test-report : npm run html-report
 ```
 
+### Bitbucket
+```bash
+Repo: https://bitbucket.org/jaykishore96/test-automation-playwright/src/ui-test/
+Pipelines: https://bitbucket.org/jaykishore96/test-automation-playwright/pipelines/results/page/1
+```

@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "npx playwright test",
 		"test:chrome": "npx playwright test --project=Chrome",
-		"test:safari": "npx playwright test --project=Webkit",
+		"test:safari": "npx playwright test --project=Webkit --reporter=html && npx playwright show-report",
 		"test:firefox": "npx playwright test --project=Firefox",
 		"test:edge": "npx playwright test --project=Edge",
 		"product-names-test": "npx playwright test tests/productNames.test.js --project=Chrome",

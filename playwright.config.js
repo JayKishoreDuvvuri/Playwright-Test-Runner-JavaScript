@@ -11,7 +11,7 @@ module.exports = {
 			use: {
 				browserName: `chromium`,
 				channel: `chrome`,
-				headless: false,
+				headless: true,
 				viewport: { width: 1720, height: 850 },
 				screenshot: `only-on-failure`,
 				video: `retain-on-failure`,
@@ -22,7 +22,7 @@ module.exports = {
 			name: `Firefox`,
 			use: {
 				browserName: `firefox`,
-				headless: false,
+				headless: true,
 				viewport: { width: 1720, height: 850 },
 				ignoreHTTPSErrors: true,
 				screenshot: `only-on-failure`,
@@ -37,7 +37,7 @@ module.exports = {
 			name: `WebKit`,
 			use: {
 				browserName: `webkit`,
-				headless: false,
+				headless: true,
 				viewport: { width: 1720, height: 850 },
 				ignoreHTTPSErrors: true,
 				screenshot: `only-on-failure`,
@@ -50,7 +50,7 @@ module.exports = {
 			use: {
 				...devices[`Pixel 5`],
 				browserName: `chromium`,
-				headless: false,
+				headless: true,
 				screenshot: `only-on-failure`,
 				video: `retain-on-failure`,
 				trace: `retain-on-failure`
@@ -61,7 +61,7 @@ module.exports = {
 			use: {
 				...devices[`iPhone 12`],
 				browserName: `webkit`,
-				headless: false,
+				headless: true,
 				screenshot: `only-on-failure`,
 				video: `retain-on-failure`,
 				trace: `retain-on-failure`
@@ -72,7 +72,7 @@ module.exports = {
 			use: {
 				browserName: `chromium`,
 				channel: `msedge`,
-				headless: false,
+				headless: true,
 				viewport: { width: 1720, height: 850 },
 				ignoreHTTPSErrors: true,
 				screenshot: `only-on-failure`,
